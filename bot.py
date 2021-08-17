@@ -7,10 +7,9 @@ import cv2
 import keras.preprocessing.image
 
 #load_dotenv()
-TOKEN = 'ODc3MjM5MDk2ODE5NDQ5OTI2.YRvukg.yq4OUsmV7c_u30z1FMPhkK3eOaw'
-GUILD = '877240529157509120'
+TOKEN = 'DISCORD TOKEN'
+GUILD = 'DISCORD GUILD'
 a = Astolphise()
-#TOKEN = 'ODc3MjM5MDk2ODE5NDQ5OTI2.YRvukg.yq4OUsmV7c_u30z1FMPhkK3eOaw'
 
 
 client = discord.Client()
@@ -31,9 +30,6 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-    # print(message.author, client.user, type(client.user))
-    # if message.author == client.user:
-    #     return
     img_data = requests.get(message.attachments[0].url).content
     with open('temp/image_name.jpg', 'wb') as handler:
         handler.write(img_data)
