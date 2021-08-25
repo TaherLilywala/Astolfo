@@ -10,4 +10,4 @@ https://user-images.githubusercontent.com/38578610/129794134-23ad3e48-cc2f-4a4a-
 - Run bot.py
 
 # Working
-Works by using a CNN based Keras model to predict images. Trained on a cumulative of 1500 images to detect astolfo. Discord.py is used to run the bot.
+Works by using a CNN based Keras model to predict images. Trained on a cumulative of 1531 images to detect astolfo. Discord.py is used to run the bot.
